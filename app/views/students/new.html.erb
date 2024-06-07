@@ -1,0 +1,24 @@
+<h1>Add New Student</h1>
+<%= form_with model: @student, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %><br>
+
+  <%= form.label :english %>
+  <%= form.number_field :english %><br>
+
+  <%= form.label :malayalam %>
+  <%= form.number_field :malayalam %><br>
+
+  <%= form.label :social_studies %>
+  <%= form.number_field :social_studies %><br>
+
+  <%= form.label :science %>
+  <%= form.number_field :science %><br>
+
+  <%= form.label :maths %>
+  <%= form.number_field :maths %><br>
+
+  <%= form.submit "Submit" %>
+<% end %>
+
+
