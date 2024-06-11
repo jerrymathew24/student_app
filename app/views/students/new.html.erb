@@ -1,24 +1,40 @@
-<h1>Add New Student</h1>
+<h3>Add New Student</h3>
 <%= form_with model: @student, local: true do |form| %>
-  <%= form.label :name %>
-  <%= form.text_field :name %><br>
 
-  <%= form.label :english %>
-  <%= form.number_field :english %><br>
+  <div class="form-group">
+    <%= form.label :name, class: "form-label" %>
+    <%= form.text_field :name, class: "form-control" %><br>
+  </div>
 
-  <%= form.label :malayalam %>
-  <%= form.number_field :malayalam %><br>
+  <div class="form-group">
+    <%= form.label :english, class: "form-label" %>
+    <%= form.number_field :english, class: "form-control" %><br>
+  </div>
 
-  <%= form.label :social_studies %>
-  <%= form.number_field :social_studies %><br>
+  <div class="form-group">
+    <%= form.label :malayalam, class: "form-label" %>
+    <%= form.number_field :malayalam, class: "form-control" %><br>
+  </div>
 
-  <%= form.label :science %>
-  <%= form.number_field :science %><br>
+  <div class="form-group">
+    <%= form.label :social_studies, class: "form-label" %>
+    <%= form.number_field :social_studies, class: "form-control" %><br>
+  </div>
 
-  <%= form.label :maths %>
-  <%= form.number_field :maths %><br>
+  <div class="form-group">
+    <%= form.label :science, class: "form-label" %>
+    <%= form.number_field :science, class: "form-control" %><br>
+  </div>
 
-  <%= form.submit "Submit" %>
+  <div class="form-group">
+    <%= form.label :maths, class: "form-label" %>
+    <%= form.number_field :maths, class: "form-control" %><br>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
 <% end %>
+
+
 
 
